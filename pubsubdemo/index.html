@@ -1,38 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pubsub Pattern</title>
+<html>
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form id="item-form">
+
     <div>
-      <span class="material-symbols-outlined">
-        expand_less
-      </span>
+      <input name="item" id="item" placeholder="Start typing" />
+      <p><small>Press Enter ↵ to to submit</small></p>
     </div>
-    <div>
-      <div>
-        <span class="material-symbols-outlined">
-          arrow_back_ios_new
-        </span>
-      </div>
-      <div>
-        <span class="material-symbols-outlined">
-          arrow_forward_ios
-        </span>
-      </div>
-    </div>
-    <div>
-      <span class="material-symbols-outlined">
-        keyboard_arrow_down
-      </span>
-    </div>
-  </body>
+  </form>
+  <div class="list-items">
+    <div class="loading">Loading...</div>
+  </div>
+  <div class="new-list">
+
+  </div>
+  <script src="./js/app.js" type="module"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
 </html>
